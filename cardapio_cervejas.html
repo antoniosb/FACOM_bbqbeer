@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BBQ & Beer</title>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="./icones/title.ico" />
+  <style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    background: linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  }
+  #content{
+    /*max-width: 800px;*/
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em
+  }
+  .footer, .push {
+    height: 4em;
+  }
+  .footer{
+  text-align: center;
+  background: url("./imagens/footer_background2.jpg");
+  background-size: cover;
+  color: #333;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  padding: 50px;
+  }
+
+  div {
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }   
+  h1 {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size: 95px;
+    color: white;
+    margin: 40px 0 0 0;
+  }
+  h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin: 0px 0 70px 0;
+  }
+  p {
+    color: rgba(255,255,255,1);
+    background: black;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 10px;
+    line-height: 28px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 30px;
+    transition: height 1s;
+    -webkit-transition: height .5s;
+    -moz-transition: height 1s;
+    border-radius: 0px 30px 0px 0px;
+  }
+  small{
+   opacity: 0; 
+ }
+ .show-description p{
+   height: 170px; 
+ }
+ .show-description small{
+   opacity: 1; 
+ }
+
+header{
+  text-align: center;
+  background: url("./imagens/header_background.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+ul {
+ padding: 10px; 
+ background: black;
+ background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+ background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+ background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+}
+li {
+  display: inline; 
+  padding: 0px 10px 0px 10px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 35px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.prato1{
+  background-image: url("./imagens/cervejas/cerveja1.jpg");
+}
+.prato2{
+  background-image: url("./imagens/cervejas/cerveja2.jpg");
+}
+.prato3{
+  background-image: url("./imagens/cervejas/cerveja3.jpg");
+}
+.prato4{
+  background-image: url("./imagens/cervejas/cerveja4.jpg");
+}
+.prato5{
+  background-image: url("./imagens/cervejas/cerveja5.jpg");
+}
+.prato6{
+  background-image: url("./imagens/cervejas/cerveja6.jpg");
+}
+.prato7{
+  background-image: url("./imagens/cervejas/cerveja7.jpg");
+}
+.prato8{
+  background-image: url("./imagens/cervejas/cerveja8.jpg");
+}
+.prato9{
+  background-image: url("./imagens/cervejas/cerveja9.jpg");
+}
+.prato10{
+  background-image: url("./imagens/cervejas/cerveja10.jpg");
+}
+.prato11{
+  background-image: url("./imagens/cervejas/cerveja11.jpg");
+}
+.prato12{
+  background-image: url("./imagens/cervejas/cerveja12.jpg");
+}
+.prato13{
+  background-image: url("./imagens/cervejas/cerveja13.jpg");
+}
+.prato14{
+  background-image: url("./imagens/cervejas/cerveja14.jpg");
+}
+.prato15{
+  background-image: url("./imagens/cervejas/cerveja15.jpg");
+}
+.prato16{
+  background-image: url("./imagens/cervejas/cerveja16.jpg");
+}
+
+.price {
+  float: right;
+}
+#htmlLogo{
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+</style>
+
+</head>
+
+<body>
+
+  <header id="header" class="">
+      <h1>BBQ <a href="./index.html">&amp;</a> Beer</h1>
+        <h2>cardápio de cervejas</h2>
+    <ul id="ul">
+      <li><a href="./agenda.html" rel="nofollow">agenda</a></li>
+      <li><a href="./cardapio_espetos.html" rel="nofollow">cardápio de espetos</a></li>
+      <li><a href="./historia.html" rel="nofollow">história</a></li>
+      <li><a href="./localizacao.html" rel="nofollow">localização</a></li>
+      <li><a href="./promocoes.html" rel="nofollow">promoções</a></li>      
+    </ul>
+  </header>
+
+  <div id="content">
+    <div onclick="toggleClass(this)" class="prato1">
+      <p>Cerveja Gordelícia <img src="./icones/brazil.ico" alt="Brazil"> 7,5% - Belgian Strong Ale<span class="price">$18</span><br />
+        <small>Gordelícia é uma cerveja fabricada na região metropolitana de São Paulo e vendida no bar do Escambo Hostel, no Paraíso, em São Paulo.
+          Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. 
+        </small></p>
+      </div>
+ 
+    <div onclick="toggleClass(this)" class="prato2">
+      <p>Cerveja Forte Escura Velhas Virgens <img src="./icones/brazil.ico" alt="Brazil"> 6,5% - India Pale Ale (IPA)<span class="price">$13</span><br />
+        <small>Esta cerveja rock'n roll é produzida pela cervejaria Invicta e foi lançada no início de 2012 para marcar os 25 anos da banda Velhas Virgens. Com 6,5% de teor alcóolico, a receita foi sugerida pelo baixista do grupo, Tuca Paiva
+          Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. 
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato3">
+      <p>Cerveja Urbana Facebock <img src="./icones/brazil.ico" alt="Brazil"> 6,4% - Tradicional Bock<span class="price">$16</span><br />
+        <small>A cerveja bock foi inspirada no Facebook.
+          Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. 
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato4">
+      <p>Cerveja Poção do Rubor da Menina <img src="./icones/brazil.ico" alt="Brazil"> entre 5% e 7% -  Red Ale<span class="price">$20</span><br />
+        <small>Da cervejaria Mestre das Poções, as cervejas são inspiradas nas posições da lua.
+          A Poção do Rubor da Menina (garrafa 102 de um lote de 108 fermentado na lua minguante). “É surpreendente encontrar aromas doces e sedutores”, avisa o site oficial, referindo-se as especiarias que aproximam o conjunto da escola red ale. Ainda assim, o aroma é suave, com leve sugestão de malte, figo e pão. O paladar é picante, com as especiarias mostrando serviço ao lado do malte de caramelo, da boa presença de lúpulo, notas de frutas vermelhas e, também, de álcool, bem inserido no contexto. Com graduação alcoólica de 5% a 7%, a Poção do Rubor da Menina é um dos destaques da cervejaria. O final é terroso e interessante.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato5">
+      <p>Cerveja Poção da Lua Cheia <img src="./icones/brazil.ico" alt="Brazil"> entre 5% e 7% -  Hop Weiss<span class="price">$20</span><br />
+        <small>Terceiro rótulo do Mestre das Poções, a Poção de Trigo da Lua Cheia (garrafa 73 de um lote de 97 fermentado na lua cheia) segue o caminho proposto pela Bodebrown Hop Weiss, uma mistura de malte de cevada com malte de trigo que elimina a característica tradicional de uma weiss deixando-a mais encorpada, translucida e caramelada. “Consideramos uma ale com trigo”, explica um texto no site. O aroma é interessante: floral, com algumas notas de caramelo e uma sugestão de anis. O paladar não entrega o que o aroma promete, pendendo para um leve amargor que remete a cravo e biscoito. Ainda assim, o final é interessante.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato6">
+      <p>Cerveja Valquíria <img src="./icones/brazil.ico" alt="Brazil"> 6,5% -  India Pale Ale (IPA)<span class="price">$22</span><br />
+        <small>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato7">
+      <p>Cerveja Carmen <img src="./icones/brazil.ico" alt="Brazil"> 5% -  Munich Helles<span class="price">$22</span><br />
+        <small>Cevadis im ampola pa arma uma pindureta. Nam varius eleifend orci, sed viverra nisl condimentum ut. Donec eget justis enim. Atirei o pau no gatis. Viva Forevis aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Copo furadis é disculpa de babadis, arcu quam euismod magna, bibendum egestas augue arcu ut est. Delegadis gente finis. In sit amet mattis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis. Pellentesque viverra accumsan ipsum elementum gravidis.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato8">
+      <p>Cerveja Bad Moose <img src="./icones/brazil.ico" alt="Brazil"> 4,5% -  Standard American Lager<span class="price">$13</span><br />
+        <small>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato9">
+      <p>Cerveja Gay Goose <img src="./icones/brazil.ico" alt="Brazil"> 7% -  Biere de Garde<span class="price">$24</span><br />
+        <small>Cevadis im ampola pa arma uma pindureta. Nam varius eleifend orci, sed viverra nisl condimentum ut. Donec eget justis enim. Atirei o pau no gatis. Viva Forevis aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Copo furadis é disculpa de babadis, arcu quam euismod magna, bibendum egestas augue arcu ut est. Delegadis gente finis. In sit amet mattis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis. Pellentesque viverra accumsan ipsum elementum gravidis.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato10">
+      <p>Cerveja L'Hermite <img src="./icones/brazil.ico" alt="Brazil"> 6,5% -  Belgian Dubbel<span class="price">$16</span><br />
+        <small>Cevadis im ampola pa arma uma pindureta. Nam varius eleifend orci, sed viverra nisl condimentum ut. Donec eget justis enim. Atirei o pau no gatis. Viva Forevis aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Copo furadis é disculpa de babadis, arcu quam euismod magna, bibendum egestas augue arcu ut est. Delegadis gente finis. In sit amet mattis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis. Pellentesque viverra accumsan ipsum elementum gravidis.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato11">
+      <p>Cerveja Coruja Extra Viva <img src="./icones/brazil.ico" alt="Brazil"> 6,5% -  Premium American Lager<span class="price">$20</span><br />
+        <small>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato12">
+      <p>Cerveja Coruja Labareda <img src="./icones/brazil.ico" alt="Brazil"> 6,7% -  Keller/Zwickel<span class="price">$18</span><br />
+        <small>Cevadis im ampola pa arma uma pindureta. Nam varius eleifend orci, sed viverra nisl condimentum ut. Donec eget justis enim. Atirei o pau no gatis. Viva Forevis aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Copo furadis é disculpa de babadis, arcu quam euismod magna, bibendum egestas augue arcu ut est. Delegadis gente finis. In sit amet mattis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis. Pellentesque viverra accumsan ipsum elementum gravidis.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato13">
+      <p>Cerveja Wells Banana Bread Beer <img src="./icones/brazil.ico" alt="Brazil"> 5,2% -  Fruit Beer<span class="price">$26</span><br />
+        <small>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato14">
+      <p>Cerveja Lucifer Het Anker <img src="./icones/belgium.ico" alt="Belgica"> 8% -  Belgian Golden Strong Ale<span class="price">$10</span><br />
+        <small>A Lucifer é o mais novo lançamento internacional da cervejaria Het Anker. É uma cerveja clara, de coloração dourada, com um colarinho branco. No aroma toques citricos e do malte. No sabor, um toque frutado complementa o final seco e amargo desta cerveja levemente ácida. * Nota sobre a diferença desta cerveja para a outra Lucifer: Quando a cervejaria Liefmans faliu, a cerveja Lucifer caiu nas mãos da cervejaria Duvel Moortgat. Inicialmente a Lucifer foi lançada pela ex-cervejaria Riva como uma Blond Strong Ale no início dos anos 80. Como a cervejaria Moortgat concentrou-se nas fruitbeers da Liefmans, a Lúcifer estava destinada a desaparecer. Então, a Duvel Moortgat e a Het Anker entraram em um acordo para que a última pudesse produzir e vender a Lúcifer.
+        </small></p>
+      </div>
+
+    <div onclick="toggleClass(this)" class="prato15">
+      <p>Cerveja Medieval <img src="./icones/belgium.ico" alt="Belgica"> 6,7% -  Belgian Blond Ale<span class="price">$10</span><br />
+        <small>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.
+        </small></p>
+      </div>      
+
+    <div onclick="toggleClass(this)" class="prato16">
+      <p>Cerveja 3 Lobos Exterminador de Trigo <img src="./icones/brazil.ico" alt="Brazil"> 4,5% -  American Wheat/RyeKeller/Zwickel<span class="price">$10</span><br />
+        <small>Cevadis im ampola pa arma uma pindureta. Nam varius eleifend orci, sed viverra nisl condimentum ut. Donec eget justis enim. Atirei o pau no gatis. Viva Forevis aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Copo furadis é disculpa de babadis, arcu quam euismod magna, bibendum egestas augue arcu ut est. Delegadis gente finis. In sit amet mattis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis. Pellentesque viverra accumsan ipsum elementum gravidis.
+        </small></p>
+      </div>
+
+
+
+      <div class="push"></div>
+  </div>
+  <footer class="footer">
+      Copyright (c) 2013. Antonio Augusto - 99901
+  </footer>
+
+      <a id="htmlLogo" href="http://www.w3.org/html/logo/">
+        <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device-semantics.png" width="90" height="29" alt="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics" title="HTML5 Powered with CSS3 / Styling, Device Access, and Semantics">
+      </a>
+
+    <script type="text/javascript">
+      function toggleClass(element){
+        var className = 'show-description';
+        if (!element || !className){
+          return;
+        }
+        var classString = element.className, nameIndex = classString.indexOf(className);
+        if (nameIndex == -1) {
+          classString += ' ' + className;
+        }
+        else {
+          classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+        }
+        element.className = classString;
+      }    
+    </script>
+  </body>
+</html>
